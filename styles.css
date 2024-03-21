@@ -1,0 +1,231 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #b88b5c; /* cor de fundo da página */
+}
+
+/* HEADER */
+header {
+    height: 12vh; /* tamanho da header */
+    background: #8d4925; /* cor da header */
+}
+
+/* LOGO */
+.container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1%;
+    top: 1.2%;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.book {
+    margin-right: 19px;
+    height: 60px;
+    width: 60px;
+}
+
+.titulo {
+    color: #ffffff; /* cor do título "livraria" */
+}
+
+/* CAIXA DE PESQUISA */
+.search-box {
+    position: absolute;
+    background-color: white;
+    top: 3.2%; /* distância do topo da página */
+    left: 21.5%;
+    height: 27px; /* altura da caixa de pesquisa */
+    width: 730px; /* largura */
+    padding: 5px;
+    border-radius: 40px; /* curvatura da borda */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    color: #8d4925;
+}
+
+.search-txt {
+    border: none; /* borda do texto */
+    background: none; /* cor de fundo */
+    outline: none;
+    color: #8d4925; /* cor da letra */
+    padding: 0 10px;
+}
+
+input[type="text"] {
+    width: 730px;
+}
+
+.search-btn {
+    width: 25px; /* largura */
+    height: 15px; /* altura */
+}
+
+/* CATEGORIAS */
+.menu-categorias {
+    display: flex;
+    position: absolute;
+    right: 12%;
+}
+
+.menu-categorias ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-categorias ul li {
+    width: 120px; /* tamanho da tabela */
+    margin: 15px;
+    padding: 10px;
+}
+
+.menu-categorias ul li a {
+    text-decoration: none;
+    color: #fff; /* decoração e cor dos textos das categorias */
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-categorias ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #8d4925;
+    margin-left: -19px;
+    border-radius: 10px; /* curvatura da borda */
+    z-index: 1; /* usado para sobrepor os itens */
+}
+
+.menu-categorias ul li:hover .sub-menu ul {
+    display: block;
+    margin: 10px; /* margem de dentro da caixa */
+}
+
+.menu-categorias ul li:hover .sub-menu ul li {
+    width: 96px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 10;
+    text-align: center;
+}
+
+.menu-categorias ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-categorias ul li:hover .sub-menu ul li a:hover {
+    color: #b88b5c;
+}
+
+/* PERFIL */
+.perfil {
+    display: flex;
+    position: absolute;
+    top: 3%;
+    right: 1.5%;
+    align-items: center;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.perfil-txt {
+    color: white;
+    margin-left: 5%;
+}
+
+/* CARRINHO */
+.carrinho {
+    display: flex;
+    position: absolute;
+    top: 3.2%;
+    right: 10%;
+}
+
+/* AUTORES FAMOSOS */
+.autores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #B67945;
+}
+
+.autores-famosos a {
+    position: relative;
+    text-decoration: none; /* tira a decoração de link */
+    color: white; /* cor do texto */
+    margin: 47px; /* espaço entre os textos */
+}
+
+.autores-famosos a::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* local onde a linha vai ficar (100% embaixo, 0% em cima) */
+    left: 0;
+    width: 0%; /* linha desaparece */
+    height: 2px; /* grosura da linha */
+    background: white; /* cor da linha */
+    transition: .3s; /* tempo de transição */
+}
+
+.autores-famosos a:hover::before {
+    width: 100%; /* linha aparece total quando passa por cima */
+}
+
+/* LIVROS */
+.titulo-populares {
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 47px;
+}
+
+.elemento {
+    background-color: #B67945; /* fundo dos livros */
+    width: 220px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.fundo-livro-populares {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 100px;
+}
+
+.titulo-lançamentos {
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 600px;
+    left: 47px;
+}
+
+.fundo-livro-lançamentos {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 200px;
+}
