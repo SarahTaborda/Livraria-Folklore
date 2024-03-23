@@ -8,9 +8,22 @@ body {
 }
 
 /* HEADER */
-header {
+.cabeçalho {
     height: 12vh; /* tamanho da header */
     background: #8d4925; /* cor da header */
+    color: #fff;
+}
+
+.rodape {
+    background: #8d4925;
+    width: 100%;
+    height: 12vh;
+    text-align: center;
+    color: #B67945;
+}
+
+.rodape-txt {
+    padding: 28px;
 }
 
 /* LOGO */
@@ -76,13 +89,12 @@ input[type="text"] {
 .menu-categorias {
     display: flex;
     position: absolute;
-    right: 12%;
+    right: 11.4%;
 }
 
 .menu-categorias ul {
     display: inline-flex;
     list-style: none;
-    color: #fff;
 }
 
 .menu-categorias ul li {
@@ -145,7 +157,6 @@ input[type="text"] {
 }
 
 .perfil-txt {
-    color: white;
     margin-left: 5%;
 }
 
@@ -153,8 +164,8 @@ input[type="text"] {
 .carrinho {
     display: flex;
     position: absolute;
-    top: 3.2%;
     right: 10%;
+    padding: 20px 0;
 }
 
 /* AUTORES FAMOSOS */
@@ -191,13 +202,11 @@ input[type="text"] {
 }
 
 /* LIVROS */
-.titulo-populares {
+.titulo-inicio {
     font-size: 35px;
     color: #fff;
     display: flex;
-    position: absolute;
-    top: 150px;
-    left: 47px;
+    padding: 30px 0px 0px 40px;
 }
 
 .elemento {
@@ -207,25 +216,9 @@ input[type="text"] {
     border-radius: 10px;
 }
 
-.fundo-livro-populares {
+.fundo-livro {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 100px;
-}
-
-.titulo-lançamentos {
-    font-size: 35px;
-    color: #fff;
-    display: flex;
-    position: absolute;
-    top: 600px;
-    left: 47px;
-}
-
-.fundo-livro-lançamentos {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 200px;
+    padding: 30px 0 15px;
 }
