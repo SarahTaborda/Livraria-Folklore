@@ -214,6 +214,10 @@ input[type="text"] {
     width: 220px;
     height: 340px;
     border-radius: 10px;
+    transition: .35s;
+    cursor: pointer;
+    color: #fff
+    
 }
 
 .fundo-livro {
@@ -221,4 +225,30 @@ input[type="text"] {
     justify-content: space-evenly;
     position: relative;
     padding: 30px 0 15px;
+}
+
+.fundo-livro:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.livro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60%;
+    padding: 35px 0 0;
+}
+
+.titulo-livro {
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.preço-livro {
+    display: flex;
+    padding: 0px 73px;
+    font-size: 20px;
 }
