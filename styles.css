@@ -241,14 +241,13 @@ input[type="text"] {
 }
 
 .titulo-livro {
-    display: flex;
     text-align: center;
-    position: relative;
-    padding: 10px;
+    padding: 10px 30px;
+    font-size: 15px;
 }
 
 .preço-livro {
-    display: flex;
-    padding: 0px 73px;
-    font-size: 20px;
+    top: 10px;
+    text-align: center;
+    font-size: 30px;
 }
