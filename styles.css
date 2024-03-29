@@ -7,11 +7,14 @@ body {
     background-color: #b88b5c; /* cor de fundo da página */
 }
 
-/* HEADER */
+            /* HEADER */
 .cabeçalho {
     height: 12vh; /* tamanho da header */
     background: #8d4925; /* cor da header */
     color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .rodape {
@@ -26,11 +29,11 @@ body {
     padding: 28px;
 }
 
-/* LOGO */
+            /* LOGO */
 .container {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 1%;
     top: 1.2%;
 }
@@ -49,9 +52,9 @@ body {
     color: #ffffff; /* cor do título "livraria" */
 }
 
-/* CAIXA DE PESQUISA */
+            /* CAIXA DE PESQUISA */
 .search-box {
-    position: absolute;
+    position: fixed;
     background-color: white;
     top: 3.2%; /* distância do topo da página */
     left: 21.5%;
@@ -85,10 +88,10 @@ input[type="text"] {
     height: 15px; /* altura */
 }
 
-/* CATEGORIAS */
+                /* CATEGORIAS */
 .menu-categorias {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 11.4%;
 }
 
@@ -142,10 +145,10 @@ input[type="text"] {
     color: #b88b5c;
 }
 
-/* PERFIL */
+            /* PERFIL */
 .perfil {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 3%;
     right: 1.5%;
     align-items: center;
@@ -160,7 +163,7 @@ input[type="text"] {
     margin-left: 5%;
 }
 
-/* CARRINHO */
+            /* CARRINHO */
 .carrinho {
     display: flex;
     position: absolute;
@@ -168,7 +171,7 @@ input[type="text"] {
     padding: 20px 0;
 }
 
-/* AUTORES FAMOSOS */
+            /* AUTORES FAMOSOS */
 .autores {
     display: flex;
     align-items: center;
@@ -203,28 +206,28 @@ input[type="text"] {
 
 /* LIVROS */
 .titulo-inicio {
-    font-size: 35px;
-    color: #fff;
+    font-size: 35px; /*Tamanho da letra*/
+    color: #fff; /*Cor da letra*/
     display: flex;
-    padding: 30px 0px 0px 40px;
+    padding: 30px 0px 0px 40px; /*Espaço da palavra com os outros*/
 }
 
 .elemento {
-    background-color: #B67945; /* fundo dos livros */
-    width: 220px;
-    height: 340px;
-    border-radius: 10px;
+    background-color: #B67945; /*fundo dos livros*/
+    width: 220px; /*largura*/
+    height: 340px; /*altura*/
+    border-radius: 10px; /*curvatura da borda*/
     transition: .35s;
     cursor: pointer;
-    color: #fff
-    
+    color: #fff; /*cor da letra de dentro*/
+    box-shadow: 3px 3px 3px #8d4925;
 }
 
 .fundo-livro {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    margin: 20px;
+    margin: 20px; /*espaço entre os arredores*/
 }
 
 .fundo-livro:hover > :not(:hover) {
@@ -232,11 +235,11 @@ input[type="text"] {
     transform: scale(0.9);
 }
 
-.livro {
+.livro { /*imagem do livro*/
     display: flex;
-    justify-content: center;
+    justify-content: center; /*no centro*/
     position: relative;
-    height: 60%;
+    height: 60%; /*altura*/
     padding: 30px 0 0;
 }
 
@@ -246,8 +249,18 @@ input[type="text"] {
     margin: 10px;
 }
 
+.nome-livro {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
 .preço-livro {
     text-align: center;
     font-size: 25px;
     margin: 10px;
+    position: absolute;
+    top: 85%;
+    width: 200px;
+    font-weight: 900;
 }
