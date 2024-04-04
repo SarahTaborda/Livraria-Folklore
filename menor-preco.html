@@ -3,8 +3,9 @@
 	
 	<head lang="en">
 		<meta charset="UTF-8">
-		<title>Livraria Folklore</title>
+		<title>Livraria Folklore - Menor Preço</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 
 	<body>
@@ -12,16 +13,14 @@
 		<header class="cabeçalho">
 					<!--LOGO-->
 			<div class="container">
-				<a href="livraria.html"><img class="book" src="book.svg" alt="Livro" height="40" width="40"></a>
-				<a href="livraria.html"><h1 class="titulo">FOLKLORE</h1></a>
+				<a href="index.html"><img class="book" src="book.svg" alt="Livro" height="40" width="40"></a>
+				<a href="index.html"><h1 class="titulo">FOLKLORE</h1></a>
 			</div>
 
 					<!--CAIXA DE PESQUISA-->
 			<div class="search-box">
-				<input type="text" class="search-txt" placeholder="Pesquisar">
-				<a href="#" class="search-btn">
-					<img src="loupe.svg" alt="Lupa" height="15" width="15">
-				</a>
+				<input type="text" class="search-txt" placeholder="Pesquisar" autocomplete="off">
+				<button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
 			</div>
 			
 					<!--CATEGORIAS-->
@@ -32,9 +31,9 @@
 						</a>
 						<div class="sub-menu">
 							<ul>
-								<li><a href="#">Menor Preço</a></li>
-								<li><a href="#">Maior Preço</a></li>
-								<li><a href="#">Mais Vendidos</a></li>
+								<li><a href="menor-preco.html">Menor Preço</a></li>
+								<li><a href="maior-preco.html">Maior Preço</a></li>
+								<li><a href="mais-vendidos.html">Mais Vendidos</a></li>
 							</ul>
 						</div>
 					</li>
@@ -61,19 +60,6 @@
 
 		<section class="conteudo">
 
-				<!--AUTORES FAMOSOS-->
-			<div class="autores">
-				<nav class="autores-famosos">
-					<a href="#">J.R.R Tolkien</a>
-					<a href="#">J.K Rowling</a>
-					<a href="#">Victoria Aveyard</a>
-					<a href="#">Suzane Collins</a>
-					<a href="#">Sarah J.</a>
-					<a href="#">Taereh Mafi</a>
-					<a href="#">Stephanie Garber</a>
-				</nav>
-			</div>
-
 				<!--MENOR PREÇO-->
 			<h1 class="titulo-inicio">MENOR PREÇO</h1>
 			<div class="fundo-livro">
@@ -84,17 +70,17 @@
 				</div>
 				<div class="elemento">
 					<div class="livro"><img src="Livros/revolucao-dos-bichos.jpg"></div>
-					<p class="titulo-livro">A revolução dos bichos</p>
+					<div class="nome-livro"><p class="titulo-livro">A revolução dos bichos</p></div>
 					<p class="preço-livro">R$ 10,00</p>
 				</div>
 				<div class="elemento">
 					<div class="livro"><img src="Livros/contos-de-fadas-celtas.jpg"></div>
-					<p class="titulo-livro">Contos de fadas celtas</p>
+					<div class="nome-livro"><p class="titulo-livro">Contos de fadas celtas</p></div>
 					<p class="preço-livro">R$ 10,90</p>
 				</div>
 				<div class="elemento">
 					<div class="livro"><img src="Livros/pequeno-principe.jpg"></div>
-					<p class="titulo-livro">O Pequeno Príncipe</p>
+					<div class="nome-livro"><p class="titulo-livro">O Pequeno Príncipe</p></div>
 					<p class="preço-livro">R$ 14,67</p>
 				</div>
 				<div class="elemento">
@@ -103,13 +89,12 @@
 					<p class="preço-livro">R$ 14,98</p>
 				</div>
 			</div>
-
 				<!--SEGUNDA LINHA-->
 			<div class="fundo-livro">
 				<div class="elemento">
 					<div class="livro"><img src="Livros/filhos-da-tempestade.jpg"></div>
-					<p class="titulo-livro">Os filhos da tempestade</p>
-					<div class="preço"><p class="preço-livro">R$ 16,10</p></div>
+					<div class="nome-livro"><p class="titulo-livro">Os filhos da tempestade</p></div>
+					<p class="preço-livro">R$ 16,10</p>
 				</div>
 				<div class="elemento">
 					<div class="livro"><img src="Livros/volta-mundo-80.jpg"></div>
@@ -118,7 +103,7 @@
 				</div>
 				<div class="elemento">
 					<div class="livro"><img src="Livros/as-duas-guerreiras.jpg"></div>
-					<p class="titulo-livro">As Duas Guerreiras</p>
+					<div class="nome-livro"><p class="titulo-livro">As Duas Guerreiras</p></div>
 					<p class="preço-livro">R$ 19,99</p>
 				</div>
 				<div class="elemento">
@@ -134,9 +119,17 @@
 			</div>
 		</section>
 
+				<!--RODAPÉ-->
 		<footer class="rodape">
+			<p class="rodape-icons">
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</p>
 			<p class="rodape-txt">© 2024 Livraria Folklore</p>
 		</footer>
+
+		<script src="script.js"></script>
 		
 	</body>
 </html>
