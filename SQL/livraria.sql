@@ -4,75 +4,75 @@ CREATE DATABASE LIVRARIA;
 USE LIVRARIA;
 
 CREATE  TABLE LIVRO(
-	id_LIVRO              INTEGER               NOT NULL      PRIMARY KEY AUTO_INCREMENT,
-	id_EDITORA            INTEGER               NOT NULL,    
-	id_AUTOR              INTEGER 	            NOT NULL,   
-	id_GENERO             INTEGER               NOT NULL,  
-        TITULO		      VARCHAR(1000)	    NOT NULL,
-	ANO_PUBLICACAO        CHAR(10)              NOT NULL,
-	VALOR                 VARCHAR(10)           NOT NULL);
+	id_LIVRO               INTEGER            NOT NULL      PRIMARY KEY AUTO_INCREMENT,
+	id_EDITORA             INTEGER            NOT NULL,    
+	id_AUTOR               INTEGER 	          NOT NULL,   
+	id_GENERO              INTEGER            NOT NULL,  
+        TITULO		       VARCHAR(1000)	  NOT NULL,
+	ANO_PUBLICACAO         CHAR(10)           NOT NULL,
+	VALOR                  VARCHAR(10)        NOT NULL);
 
 CREATE TABLE GENERO_LIVRO(
- 	id_LIVRO             INTEGER 	 NOT NULL  		PRIMARY KEY AUTO_INCREMENT,
-	id_GENERO            INTEGER  	 NOT NULL);
+ 	id_LIVRO               INTEGER 	 	  NOT NULL  	PRIMARY KEY AUTO_INCREMENT,
+	id_GENERO              INTEGER  	  NOT NULL);
 
 CREATE TABLE GENERO(
-	id_GENERO         INTEGER             NOT NULL   	PRIMARY KEY AUTO_INCREMENT,
-	NOME_GENERO       VARCHAR(200)        NOT NULL );
+	id_GENERO              INTEGER            NOT NULL   	PRIMARY KEY AUTO_INCREMENT,
+	NOME_GENERO            VARCHAR(200)       NOT NULL );
 
 CREATE TABLE AUTOR_LIVRO(
-	id_AUTOR       INTEGER		    NOT NULL, 
-	id_LIVRO       INTEGER 	            NOT NULL);
+	id_AUTOR               INTEGER	          NOT NULL, 
+	id_LIVRO               INTEGER 	          NOT NULL);
 
 CREATE TABLE AUTOR(
-	id_AUTOR      INTEGER      	    NOT NULL  		PRIMARY KEY AUTO_INCREMENT,
-	NOME          VARCHAR(200)          NOT NULL);
+	id_AUTOR               INTEGER      	  NOT NULL  	PRIMARY KEY AUTO_INCREMENT,
+	NOME                   VARCHAR(200)       NOT NULL);
  
 CREATE TABLE EDITORA(
-	id_EDITORA     INTEGER         NOT NULL 		PRIMARY KEY AUTO_INCREMENT,
-	NOME           VARCHAR(200)    NOT NULL);
+	id_EDITORA             INTEGER            NOT NULL 	PRIMARY KEY AUTO_INCREMENT,
+	NOME                   VARCHAR(200)       NOT NULL);
 
 CREATE TABLE ESTOQUE_LIVRO(
-	id_ESTOQUE            INTEGER  	    NOT NULL,
-	id_LIVRO              INTEGER       NOT NULL);
+	id_ESTOQUE             INTEGER  	  NOT NULL,
+	id_LIVRO               INTEGER            NOT NULL);
 
 CREATE TABLE ESTOQUE(
-	id_ESTOQUE     	        INTEGER         	NOT NULL        PRIMARY KEY AUTO_INCREMENT,
-	id_LIVRO            	INTEGER  	  	NOT NULL,
-	QUANTIDADE_LIVRO   	VARCHAR (100)   	NOT  NULL);
+	id_ESTOQUE     	       INTEGER            NOT NULL      PRIMARY KEY AUTO_INCREMENT,
+	id_LIVRO               INTEGER  	  NOT NULL,
+	QUANTIDADE_LIVRO       VARCHAR(100)   	  NOT  NULL);
 
 CREATE TABLE VENDA(
-	ID_VENDA            INTEGER   	 	NOT NULL  		PRIMARY KEY AUTO_INCREMENT,
-	ID_CLIENTE          INTEGER   	 	NOT NULL,
-	ID_VENDEDOR         INTEGER     	NOT NULL,
-	VALOR_TOTAL         VARCHAR(10)   	NOT NULL,
-	DATA_DE_VENDA	    CHAR(10) 		NOT NULL,
-	QUANTIDADE          VARCHAR(200)  	NOT NULL);
+	ID_VENDA               INTEGER   	  NOT NULL  	PRIMARY KEY AUTO_INCREMENT,
+	ID_CLIENTE             INTEGER   	  NOT NULL,
+	ID_VENDEDOR            INTEGER     	  NOT NULL,
+	VALOR_TOTAL            VARCHAR(10)   	  NOT NULL,
+	DATA_DE_VENDA	       CHAR(10) 	  NOT NULL,
+	QUANTIDADE             VARCHAR(200)  	  NOT NULL);
 
 CREATE TABLE CLIENTE(
-       ID_CLIENTE     	        INTEGER  		NOT NULL     	PRIMARY KEY AUTO_INCREMENT,          
-       NOME              	VARCHAR(200) 		NOT NULL,
-       NUMERO                   VARCHAR(15)  		NOT NULL,
-       GMAIL             	VARCHAR(200)  		NOT NULL,
-       ANIVERSARIO              CHAR(10)  		NOT NULL,
-       CPF                      CHAR(14)     		NOT NULL,
-       ENDERECO              	VARCHAR(200)  		NOT NULL);
+       ID_CLIENTE     	       INTEGER  	  NOT NULL     	PRIMARY KEY AUTO_INCREMENT,          
+       NOME                    VARCHAR(200) 	  NOT NULL,
+       NUMERO                  VARCHAR(15)  	  NOT NULL,
+       GMAIL                   VARCHAR(200)  	  NOT NULL,
+       ANIVERSARIO             CHAR(10)  	  NOT NULL,
+       CPF                     CHAR(14)     	  NOT NULL,
+       ENDERECO                VARCHAR(200)  	  NOT NULL);
 
 CREATE TABLE VENDEDOR(
-       ID_VENDEDOR            INTEGER            NOT NULL	 PRIMARY KEY AUTO_INCREMENT,
-       NOME                   VARCHAR(200)  	 NOT NULL,
-       CONTATO                VARCHAR (15)       NOT NULL);
+       ID_VENDEDOR             INTEGER            NOT NULL	 PRIMARY KEY AUTO_INCREMENT,
+       NOME                    VARCHAR(200)  	  NOT NULL,
+       CONTATO                 VARCHAR (15)       NOT NULL);
  
 CREATE TABLE ENDERECO(
-       ID_ENDERECO             INTEGER 	 	NOT NULL	 PRIMARY KEY AUTO_INCREMENT,
-       ID_CLIENTE              INTEGER       	NOT NULL,
-       CEP                     VARCHAR(8)       NOT NULL,
-       NUMERO                  VARCHAR(15)  	NOT NULL,
-       COMPLEMENTO             VARCHAR(200)   	NOT NULL,
-       RUA                     VARCHAR(200) 	NOT NULL,
-       BAIRRO                  VARCHAR(200)	NOT NULL,
-       CIDADE                  VARCHAR(100) 	NOT NULL,
-       ESTADO                  VARCHAR(100)	NOT NULL);
+       ID_ENDERECO             INTEGER 	 	  NOT NULL	 PRIMARY KEY AUTO_INCREMENT,
+       ID_CLIENTE              INTEGER       	  NOT NULL,
+       CEP                     VARCHAR(8)         NOT NULL,
+       NUMERO                  VARCHAR(15)  	  NOT NULL,
+       COMPLEMENTO             VARCHAR(200)   	  NOT NULL,
+       RUA                     VARCHAR(200) 	  NOT NULL,
+       BAIRRO                  VARCHAR(200)	  NOT NULL,
+       CIDADE                  VARCHAR(100) 	  NOT NULL,
+       ESTADO                  VARCHAR(100)	  NOT NULL);
 
 
 ALTER TABLE LIVRO ADD CONSTRAINT FK_EDITORA_LIVRO
