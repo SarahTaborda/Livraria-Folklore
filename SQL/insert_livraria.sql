@@ -1,16 +1,16 @@
 INSERT INTO GENERO (nome_genero)
 VALUES ('Fantasia'),
-	   ('Distopia');
+       ('Distopia');
 
 INSERT INTO EDITORA (nome)
 VALUES ('Bloomsbury Publishing'),
-	   ('Miramax Books'),
+       ('Miramax Books'),
        ('George Allen & Unwin'),
        ('Martins Fontes');
        
 INSERT INTO AUTOR (nome)
 VALUES ('J.K.Rowling'),
-	   ('Rick Riorda'),
+       ('Rick Riorda'),
        ('J.J.R Tolkien');
 
 INSERT INTO LIVRO (titulo,id_genero,id_editora,id_autor,ano_publicacao,valor)
@@ -22,7 +22,7 @@ VALUES ('Harry Potter e a Pedra Filosofal',1,1,1,'1997/06/26',48.12),
 
 INSERT INTO GENERO (nome_genero)
 VALUES ('Fantasia'),
-    ('Distopia');
+       ('Distopia');
 
 INSERT INTO EDITORA (nome)
 VALUES ('Bloomsbury Publishing'),
