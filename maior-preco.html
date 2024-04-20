@@ -9,22 +9,21 @@
 	</head>
 
 	<body>
-		
 		<header class="cabeçalho">
 					<!--LOGO-->
 			<div class="container">
 				<a href="index.html"><img class="book" src="book.svg" alt="Livro" height="40" width="40"></a>
 				<a href="index.html"><h1 class="titulo">FOLKLORE</h1></a>
 			</div>
-
 					<!--CAIXA DE PESQUISA-->
 			<div class="search-box">
-				<input type="text" class="search-txt" placeholder="Pesquisar">
-				<a href="#" class="search-btn">
-					<img src="loupe.svg" alt="Lupa" height="15" width="15">
-				</a>
+				<div class="row">
+					<input type="text" id="input-box" placeholder="Pesquisar" autocomplete="off">
+					<button class="btn-pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="result-box">
+				</div>
 			</div>
-			
 					<!--CATEGORIAS-->
 			<div class="menu-categorias">
 				<ul>
@@ -41,7 +40,6 @@
 					</li>
 				</ul>
 			</div>
-
 					<!--PERFIL-->
 			<div class="perfil">
 				<a href="#">
@@ -51,7 +49,6 @@
 						<h2 class="perfil-txt">Perfil</h>
 					</a>
 			</div>
-
 					<!--CARRINHO-->
 			<div class="carrinho">
 				<a href="#">
@@ -59,67 +56,544 @@
 				</a>
 			</div>
 		</header>
+					<!--AUTORES FAMOSOS-->
+		<div id="autores-famosos">
+			<div class="tab-buttons">
+				<a href="index.html" class="btn-home"><button class="tab-btn" content-id="home">
+					<i class="fa-solid fa-house" style="color: #fff;"></i>
+					<p class="home-txt">Home</p></a>
+				</button>
+				<button class="tab-btn" content-id="j-tolkien">J.R.R Tolkien</button>
+				<button class="tab-btn" content-id="jk-rowling">J.K Rowling</button>
+				<button class="tab-btn" content-id="victoria-aveyard">Victoria Aveyard</button>
+				<button class="tab-btn" content-id="sarah-j">Sarah J. Maas</button>
+				<button class="tab-btn" content-id="taereh-mafi">Taereh Mafi</button>
+				<button class="tab-btn" content-id="stephanie-garber">Stephanie Garber</button>
+			</div>
+		</div>
 
 		<section class="conteudo">
-
 						<!--MAIOR PREÇO-->
-			<h1 class="titulo-inicio">MAIOR PREÇO</h1> 
-			<div class="fundo-livro">
-				<div class="elemento">
-					<div class="livro"><img src="Livros/Cidade_da_lua_1.jpg"></div>
-					<p class="titulo-livro">Casa de terra e sangue - Vol 1</p>
-					<p class="preço-livro">R$ 73,70</p>
+			<div class="tab-contents">
+				<div class="content show" id="">
+					<div class="infos">
+						<h1 class="titulo-autores">MAIOR PREÇO</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/Cidade_da_lua_1.jpg"></div>
+								<p class="titulo-livro">Casa de terra e sangue - Vol 1</p>
+								<p class="preço-livro">R$ 73,70</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/cidade_da_lua_2.jpg"></div>
+								<p class="titulo-livro">Casa de céu e sopro - Vol 2</p>
+								<p class="preço-livro">R$  55,34</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/cdlc3.jpg"></div>
+								<p class="titulo-livro">Casa de chama e sombra - Vol 3</p>
+								<div class="preço"><p class="preço-livro">R$  76,81</p></div>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/quarta-asa.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Quarta asa</p></div>
+								<p class="preço-livro">R$ 78,99</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/rei_de_elfhame.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Rei de Elfhame</p></div>
+								<p class="preço-livro">R$ 54,72</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/o_jumentinho.jpg"></div>
+								<p class="titulo-livro">O Jumentinho Que Carregou Um Rei </p>
+								<p class="preço-livro">R$ 112,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/duna1.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Duna - Vol 1</p></div>
+								<p class="preço-livro">R$ 74,16</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/duna2.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Duna - Vol 2</p></div>
+								<p class="preço-livro">R$ 63,36</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/Box_duna.png"></div>
+								<p class="titulo-livro">Box Duna: Primeira Trilogia</p>
+								<p class="preço-livro">R$ 201,28</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/box_HP.png"></div>
+								<p class="titulo-livro">Box azul Harry Potter - 7 volumes</p>
+								<p class="preço-livro">R$ 216,90</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/cidade_da_lua_2.jpg"></div>
-					<p class="titulo-livro">Casa de céu e sopro - Vol 2</p>
-					<p class="preço-livro">R$  55,34</p>
+			</div>
+						<!--J.R.R TOLKIEN-->
+			<div class="tab-contents">
+				<div class="content" id="j-tolkien">
+					<div class="infos">
+						<h1 class="titulo-autores">J.R.R Tolkien</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-fall-fo-numenor.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">The Fall Of Númenor</p></div>
+								<p class="preço-livro">R$ 129,76</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-nature-of-middle.jpg"></div>
+								<p class="titulo-livro">The Nature Of Middle-Earth</p>
+								<p class="preço-livro">R$ 88,66</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/a-queda-de-gondolin.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A queda de Gondolin</p></div>
+								<p class="preço-livro">R$ 53,38</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/beren-e-luthien.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Beren e Lúthien</p></div>
+								<p class="preço-livro">R$ 59,99</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/beowulf-translation.jpg"></div>
+								<p class="titulo-livro">Beowulf - A Translation and Commentary</p>
+								<p class="preço-livro">R$ 72,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/queda-de-artur.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A Queda De Artur</p></div>
+								<p class="preço-livro">R$ 45,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/lenda-de-sigurd-e-gudrun.jpg"></div>
+								<p class="titulo-livro">A Lenda de Sigurd e Gudrún</p>
+								<p class="preço-livro">R$ 98,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/os-filhos-de-hurin.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Os Filhos de Húrin</p></div>
+								<p class="preço-livro">R$ 55,63</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/roverandom.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Roverandom</p></div>
+								<p class="preço-livro">R$ 25,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/sa1.jpg"></div>
+								<p class="titulo-livro">O Senhor dos Anéis: A Sociedade do Anél</p>
+								<p class="preço-livro">R$ 30,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/O_hobbit.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Hobbit</p></div>
+								<p class="preço-livro">R$ 53,80</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/o-silmarillion.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Silmarillion</p></div>
+								<p class="preço-livro">R$ 41,61</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/contos-inacabados.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Contos Inacabados</p></div>
+								<p class="preço-livro">R$ 54,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/as-duas-torres.jpg"></div>
+								<p class="titulo-livro">O Senhor dos Anéis: As duas torres</p>
+								<p class="preço-livro">R$ 52,43</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/o-retorno-do-rei.jpg"></div>
+								<p class="titulo-livro">O Senhor dos Anéis: O retorno do rei</p>
+								<p class="preço-livro">R$ 30,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/sobre-historias-de-fadas.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Sobre Histórias de Fadas</p></div>
+								<p class="preço-livro">R$ 149,00</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/tom-bombadil.jpg"></div>
+								<p class="titulo-livro">As Aventuras de Tom Bombadil</p>
+								<p class="preço-livro">R$ 178,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/letters-from-father-christmas.jpg"></div>
+								<p class="titulo-livro">Letters from Father Christmas</p>
+								<p class="preço-livro">R$ 161,64</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/arvore-e-folha.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Tree and Leaf</p></div>
+								<p class="preço-livro">R$ 30,80</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/farmer-giles-of-ham.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Farmer Giles Of Ham</p></div>
+								<p class="preço-livro">R$ 90,18</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/honnits-journal.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A Hobbit's Journal</p></div>
+								<p class="preço-livro">R$ 45,56</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/bilbos-last-song.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Bilbo's Last Song</p></div>
+								<p class="preço-livro">R$ 55,39</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-lays-of-beleriand.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">The Lays of Beleriand</p></div>
+								<p class="preço-livro">R$ 57,76</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/cdlc3.jpg"></div>
-					<p class="titulo-livro">Casa de chama e sombra - Vol 3</p>
-					<div class="preço"><p class="preço-livro">R$  76,81</p></div>
+			</div>
+						<!--J.K ROWLING-->
+			<div class="tab-contents">
+				<div class="content" id="jk-rowling">
+					<div class="infos">
+						<h1 class="titulo-autores">J.K Rowling</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/hp1.jpg"></div>
+								<p class="titulo-livro">Harry Potter e a Pedra Filosofal</p>
+								<p class="preço-livro">R$ 48,12</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/vocacao-para-o-mal.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Vocação para o mal</p></div>
+								<p class="preço-livro">R$ 14,80</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-running-grave.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">The Running Grave</p></div>
+								<p class="preço-livro">R$ 108,33</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/animais-fantasticos-e-onde-habitam.jpg"></div>
+								<p class="titulo-livro">Animais Fantásticos e Onde Habitam</p>
+								<p class="preço-livro">R$ 109,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/reliquias-da-morte.jpg"></div>
+								<p class="titulo-livro">Harry Potter e as Relíquias da Morte</p>
+								<p class="preço-livro">R$ 47,64</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/HP_camara_secreta.jpg"></div>
+								<p class="titulo-livro">Harry Potter e a Câmara Secreta</p>
+								<p class="preço-livro">R$ 50,40</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/HP_prisioneiro_de_azkaban.jpg"></div>
+								<p class="titulo-livro">Harry Potter e o Prisioneiro de Azkaban</p>
+								<p class="preço-livro">R$ 54,23</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/HP_calice_de_fogo.jpg"></div>
+								<p class="titulo-livro">Harry Potter e o Cálice de Fogo</p>
+								<p class="preço-livro">R$ 74,93</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/HP-ordem-da-fenix.jpg"></div>
+								<p class="titulo-livro">Harry Potter e a Ordem da Fênix</p>
+								<p class="preço-livro">R$ 89,93</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-casual-vacancy.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">The Casual Vacancy</p></div>
+								<p class="preço-livro">R$ 62,28</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/hp-o-enigma-do-principe.jpg"></div>
+								<p class="titulo-livro">Harry Potter e o Enigma do Príncipe</p>
+								<p class="preço-livro">R$ 77,89</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/o-ickabog.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Ickabog</p></div>
+								<p class="preço-livro">R$ 32,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/the-christmas-pig.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">The Christmas Pig</p></div>
+								<p class="preço-livro">R$ 73,05</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/quadribol-atraves-dos-seculos.jpg"></div>
+								<p class="titulo-livro">Quadribol Através dos Séculos</p>
+								<p class="preço-livro">R$ 47,52</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/os-contos-de-beedles-o-bardo.jpg"></div>
+								<p class="titulo-livro">Os Contos de Beedle, o Bardo</p>
+								<p class="preço-livro">R$ 12,00</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/quarta-asa.jpg"></div>
-					<div class="nome-livro"><p class="titulo-livro">Quarta asa</p></div>
-					<p class="preço-livro">R$ 78,99</p>
+			</div>
+						<!--VICTORIA AVEYARD-->
+			<div class="tab-contents">
+				<div class="content" id="victoria-aveyard">
+					<div class="infos">
+						<h1 class="titulo-autores">Victoria Aveyard</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/rainha-vermelha.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A Rainha Vermelha</p></div>
+								<p class="preço-livro">R$ 31,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/espada-de-vidro.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Espada de vidro</p></div>
+								<p class="preço-livro">R$ 45,04</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/a-prisao-do-rei.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A prisão do rei</p></div>
+								<p class="preço-livro">R$ 44,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/tempestade-de-guerra.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Tempestade de Guerra</p></div>
+								<p class="preço-livro">R$ 39,99</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/coroa-cruel.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Coroa Cruel</p></div>
+								<p class="preço-livro">R$ 24,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/fate-breaker.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Fate Breaker</p></div>
+								<p class="preço-livro">R$ 93,09</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/cancao-da-rainha.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Canção da Rainha</p></div>
+								<p class="preço-livro">R$ 3,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/destruidor-de-espadas.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Destruidor de espadas</p></div>
+								<p class="preço-livro">R$ 57,38</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/cicatrizes-de-aco.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Cicatrizes de Aço</p></div>
+								<p class="preço-livro">R$ 3,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/destruidor-de-mundos.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Destruidor de mundos</p></div>
+								<p class="preço-livro">R$ 26,90</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/rei_de_elfhame.jpg"></div>
-					<div class="nome-livro"><p class="titulo-livro">O Rei de Elfhame</p></div>
-					<p class="preço-livro">R$ 54,72</p>
+			</div>
+						<!--SARAH J. MASS-->
+			<div class="tab-contents">
+				<div class="content" id="sarah-j">
+					<div class="infos">
+						<h1 class="titulo-autores">Sarah J. Maas</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/corte-de-espinhos-e-rosas.jpg"></div>
+								<p class="titulo-livro">Corte de Espinhos e Rosas</p>
+								<p class="preço-livro">R$ 52,43</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/corte-de-nevoa-e-furia.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Corte de Nevoa e Fúria</p></div>
+								<p class="preço-livro">R$ 38,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/cdlc3.jpg"></div>
+								<p class="titulo-livro">Casa de chama e sombra - Vol 3</p>
+								<p class="preço-livro">R$ 76,81</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Trono de Vidro</p></div>
+								<p class="preço-livro">R$ 41,83</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/Cidade_da_lua_1.jpg"></div>
+								<p class="titulo-livro">Casa de terra e sangue - Vol 1</p>
+								<p class="preço-livro">R$ 73,70</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/corte-de-chamas-prateadas.jpg"></div>
+								<p class="titulo-livro">Corte de chamas prateadas</p>
+								<p class="preço-livro">R$ 53,10</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/corte-de-asas-e-ruinas.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Corte de asas e ruína</p></div>
+								<p class="preço-livro">R$ 54,12</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro-herdeira-do-fogo.jpg"></div>
+								<p class="titulo-livro">Trono de Vidro - Herdeira do fogo</p>
+								<p class="preço-livro">R$ 56,18</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro-reino-de-cinzas.jpg"></div>
+								<p class="titulo-livro">Trono de Vidro - Reino de cinzas</p>
+								<p class="preço-livro">R$ 90,60</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro-coroa-da-meia-noite.jpg"></div>
+								<p class="titulo-livro">Trono de Vidro - Coroa da meia-noite</p>
+								<p class="preço-livro">R$ 51,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/a-lamina-da-assassina.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">A Lâmina da Assassina</p></div>
+								<p class="preço-livro">R$ 69,43</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro-rainha-das-sombras.jpg"></div>
+								<p class="titulo-livro">Trono de Vidro - Rainha das sombras</p>
+								<p class="preço-livro">R$ 59,93</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/trono-de-vidro-imperio-de-tempestades.jpg"></div>
+								<p class="titulo-livro">Trono de Vidro - Império de tempestades</p>
+								<p class="preço-livro">R$ 67,43</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/corte-de-gelo-e-estrelas.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Corte de Gelo e Estrelas</p></div>
+								<p class="preço-livro">R$ 43,12</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/Cidade_da_lua_2.jpg"></div>
+								<p class="titulo-livro">Casa de céu e sopro - Vol 2</p>
+								<p class="preço-livro">R$ 55,34</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/torre-do-alvorecer.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Torre do alvorecer</p></div>
+								<p class="preço-livro">R$ 52,76</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<!--TAEREH MAFI-->
+			<div class="tab-contents">
+				<div class="content" id="taereh-mafi">
+					<div class="infos">
+						<h1 class="titulo-autores">Taereh Mafi</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/estilhaca-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Estilhaça-me</p></div>
+								<p class="preço-livro">R$ 44,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/liberta-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Liberta-me</p></div>
+								<p class="preço-livro">R$ 44,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/incendeia-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Incendeia-me</p></div>
+								<p class="preço-livro">R$ 44,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/desafia-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Desafia-me</p></div>
+								<p class="preço-livro">R$ 35,30</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/imagina-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Imagina-me</p></div>
+								<p class="preço-livro">R$ 35,30</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/restaura-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Restaura-me</p></div>
+								<p class="preço-livro">R$ 46,10</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/aceita-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Aceita-me</p></div>
+								<p class="preço-livro">R$ 32,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/unifica-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Unifica-me</p></div>
+								<p class="preço-livro">R$ 31,40</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/decifra-me.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Deciframe-me</p></div>
+								<p class="preço-livro">R$ 27,40</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/oceano-entre-nos.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Oceano entre nós</p></div>
+								<p class="preço-livro">R$ 44,92</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<!--STEPHANIE GARBER-->
+			<div class="tab-contents">
+				<div class="content" id="stephanie-garber">
+					<div class="infos">
+						<h1 class="titulo-autores">Stephanie Garber</h1>
+						<div class="fundo-livro">
+							<div class="elemento">
+								<div class="livro"><img src="Livros/caraval.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Caraval</p></div>
+								<p class="preço-livro">R$ 19,90</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/era-uma-vez-um-coracao-partido.jpg"></div>
+								<p class="titulo-livro">Era uma vez um coração partido</p>
+								<p class="preço-livro">R$ 51,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/a-balada-do-felizes-para-nunca.jpg"></div>
+								<p class="titulo-livro">A balada do felizes para nunca</p>
+								<p class="preço-livro">R$ 50,60</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/finale.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Finale</p></div>
+								<p class="preço-livro">R$ 40,89</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/legendario.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">Legendário</p></div>
+								<p class="preço-livro">R$ 51,92</p>
+							</div>
+							<div class="elemento">
+								<div class="livro"><img src="Livros/a-maldicao-do-verdadeiro-amor.jpg"></div>
+								<p class="titulo-livro">A maldição do verdadeiro amor</p>
+								<p class="preço-livro">R$ 58,10</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-						
-			<div class="fundo-livro">
-				<div class="elemento">
-					<div class="livro"><img src="Livros/o_jumentinho.jpg"></div>
-					<p class="titulo-livro">O Jumentinho Que Carregou Um Rei </p>
-					<p class="preço-livro">R$ 112,00</p>
-				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/duna1.jpg"></div>
-					<div class="nome-livro"><p class="titulo-livro">Duna - Vol 1</p></div>
-					<p class="preço-livro">R$ 74,16</p>
-				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/duna2.jpg"></div>
-					<div class="nome-livro"><p class="titulo-livro">Duna - Vol 2</p></div>
-					<p class="preço-livro">R$ 63,36</p>
-				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/Box_duna.png"></div>
-					<p class="titulo-livro">Box Duna: Primeira Trilogia</p>
-					<p class="preço-livro">R$ 201,28</p>
-				</div>
-				<div class="elemento">
-					<div class="livro"><img src="Livros/box_HP.png"></div>
-					<p class="titulo-livro">Box azul Harry Potter - 7 volumes</p>
-					<p class="preço-livro">R$ 216,90</p>
-				</div>
-			</div>
 		</section>
 
 				<!--RODAPÉ-->
@@ -131,5 +605,7 @@
 			<p class="rodape-txt">© 2024 Livraria Folklore</p>
 		</footer>
 
+		<script src="script.js"></script>
+		<script src="autocomplete.js"></script>
 	</body>
 </html>
