@@ -1,6 +1,28 @@
 INSERT INTO GENERO (nome_genero)
 VALUES ('Fantasia'),
-       ('Distopia');
+	   ('Distopia');
+
+INSERT INTO EDITORA (nome)
+VALUES ('Bloomsbury Publishing'),
+	   ('Miramax Books'),
+       ('George Allen & Unwin'),
+       ('Martins Fontes');
+       
+INSERT INTO AUTOR (nome)
+VALUES ('J.K.Rowling'),
+	   ('Rick Riorda'),
+       ('J.J.R Tolkien');
+
+INSERT INTO LIVRO (titulo,id_genero,id_editora,id_autor,ano_publicacao,valor)
+VALUES ('Harry Potter e a Pedra Filosofal',1,1,1,'1997/06/26',48.12),
+       ('Harry Potter e a Camara Secreta',1,1,1,'1998/07/02',50.40),
+       ('Pearcy Jackson O Ladrao de Raios',1,2,2,'01/07/2005',20.00),
+       ('O Hobbit',1,1,3,'1937/09/21',53.80);
+
+
+INSERT INTO GENERO (nome_genero)
+VALUES ('Fantasia'),
+    ('Distopia');
 
 INSERT INTO EDITORA (nome)
 VALUES ('Bloomsbury Publishing'),
