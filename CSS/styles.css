@@ -1,0 +1,432 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #b88b5c; /* cor de fundo da página */
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+            /* HEADER */
+.cabeçalho {
+    height: 12vh; /* tamanho da header */
+    background: #8d4925; /* cor da header */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.rodape {
+    background: #8d4925;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    color: #B67945;
+}
+
+.rodape-icons{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+    cursor: pointer;
+    padding-top: 27px;
+}
+
+            /* LOGO */
+.container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 1%;
+    top: 1.2%;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.book {
+    margin-right: 19px;
+    height: 60px;
+    width: 60px;
+}
+
+.titulo {
+    color: #ffffff; /* cor do título "livraria" */
+}
+
+            /* CAIXA DE PESQUISA */
+.search-box {
+  width: 740px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  margin: 20px 290px 0px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+input {
+  flex: 1;
+  height: 15px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  color: #8d4925;
+}
+
+.btn-pesquisa {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.fa-solid {
+  width: 13px;
+  color: #8d4925;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #8d4925;
+}
+
+.result-box ul {
+  border-top: 1px solid whitesmoke;
+  padding: 10px 10px;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #8d4925;
+}
+
+.result-box ul li:hover {
+  background: #e9f3ff;
+}
+
+.result-box {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.result-box::-webkit-scrollbar { 
+    width: 0; /*tira a barra de rolagem*/
+}
+
+                /* CATEGORIAS */
+.menu-categorias {
+    display: flex;
+    position: fixed;
+    right: 13%;
+    top: 12px;
+}
+
+.menu-categorias ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-categorias ul li {
+    width: 120px; /* tamanho da tabela */
+    margin: 15px;
+    padding: 1px;
+}
+
+.menu-categorias ul li a {
+    text-decoration: none;
+    color: #fff; /* decoração e cor dos textos das categorias */
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-categorias ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #8d4925;
+    margin-left: -19px;
+    border-radius: 10px; /* curvatura da borda */
+    z-index: 1; /* usado para sobrepor os itens */
+}
+
+.menu-categorias ul li:hover .sub-menu ul {
+    display: block;
+    margin: 10px; /* margem de dentro da caixa */
+}
+
+.menu-categorias ul li:hover .sub-menu ul li {
+    width: 96px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 10;
+    text-align: center;
+}
+
+.menu-categorias ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-categorias ul li:hover .sub-menu ul li a:hover {
+    color: #b88b5c;
+}
+
+            /* PERFIL */
+.perfil {
+    display: flex;
+    position: fixed;
+    top: 3%;
+    right: 1.5%;
+    align-items: center;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.perfil-txt {
+    margin-left: 5%;
+}
+
+            /* CARRINHO */
+#icon-cart {
+    display: flex;
+    position: absolute;
+    right: 12%;
+    top: 23px;
+    color: #fff;
+    font-size: 30px;
+}
+
+#span-cart {
+    display: flex;
+    position: absolute;
+    right: 9.5%;
+    top: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.products-container {
+    color: #fff;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.fa-trash{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid #8d4925;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.product-title {
+    position: fixed;
+    margin-left: 36px;
+    margin-top: -15px;
+}
+
+.price {
+    width: 45%;
+    position: fixed;
+    padding-left: 300px;
+}
+
+.quantity {
+    position: fixed;
+    margin-left: 250px;
+    margin-top: -15px;
+    display: flex;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 70px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.total {
+    width: 15%;
+    position: fixed;
+    padding-left: 300px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+             /* AUTORES FAMOSOS */
+.btn-home {
+    text-decoration: none;
+    color:white;
+    display: flex;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 5px;
+    background-color: #B67945;
+    justify-content: space-around;
+}
+
+.home-txt {
+    margin-left: 10px;
+}
+
+.tab-btn {
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.tab-btn {
+    display: flex;
+}
+
+.tab-btn {
+    position: relative;
+    margin: 15px
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* local onde a linha vai ficar (100% embaixo, 0% em cima) */
+    left: 0;
+    width: 0%; /* linha desaparece */
+    height: 2px; /* grosura da linha */
+    background: white; /* cor da linha */
+    transition: .3s; /* tempo de transição */
+}
+
+.tab-btn:hover::before {
+    width: 100%; /* linha aparece total quando passa por cima */
+}
+
+
+            /* LIVROS */
+.titulo-inicio {
+    font-size: 35px; /*Tamanho da letra*/
+    color: #fff; /*Cor da letra*/
+    display: flex;
+    padding: 25px 0px 0px 40px; /*Espaço da palavra com os outros*/
+}
+
+.titulo-autores {
+    font-size: 35px; /*Tamanho da letra*/
+    color: #fff; /*Cor da letra*/
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.elemento {
+    background-color: #B67945; /*fundo dos livros*/
+    width: 219px; /*largura*/
+    height: 340px; /*altura*/
+    border-radius: 10px; /*curvatura da borda*/
+    transition: .35s;
+    cursor: pointer;
+    color: #fff; /*cor da letra de dentro*/
+    box-shadow: 3px 3px 20px #8d4925; /*sombra*/
+    margin: 20px 5px 20px 5px;
+}
+
+.fundo-livro {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.fundo-livro:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.livro { /*imagem do livro*/
+    display: flex;
+    justify-content: center; /*no centro*/
+    position: relative;
+    height: 60%; /*altura*/
+    padding: 30px 0 0;
+}
+
+.titulo-livro {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.nome-livro {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.preço-livro {
+    font-size: 25px;
+    margin: 10px;
+    margin-left: 60px;
+    top: 82%;
+    width: 200px;
+    font-weight: 900;
+}
+
+#cart {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 900;
+}
