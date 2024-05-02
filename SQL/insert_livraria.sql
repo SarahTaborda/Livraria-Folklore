@@ -1,13 +1,13 @@
 INSERT INTO GENERO (nome_genero)
 VALUES ('Fantasia'),
-    ('Distopia');
+       ('Distopia');
 
 INSERT INTO EDITORA (nome_editora)
 VALUES ('Bloomsbury Publishing'),
        ('Miramax Books'),
        ('George Allen & Unwin'),
        ('Martins Fontes'),
-	   ('Éditions Gallimard');       
+       ('Éditions Gallimard');       
 INSERT INTO AUTOR (nome)
 VALUES ('J.K.Rowling'),
        ('Rick Riorda'),
@@ -33,7 +33,7 @@ VALUES ('20',1),
 INSERT INTO CLIENTE (nome,aniversario,numero,gmail,cpf,endereco)
 VALUES ('Sarah Heloisa Taborda','2006/07/24','41 992598665','sarahtaborda229@gmail.com','00000000000','Campo Largo'),
        ('Arthur De Souza Alves','2006/10/28','41 988337710','arthurdesouzalves06@gmail.com','00000000000','Pinheirinho'),
-	   ('Maurilio Cruz','2003/01/13','41 983785590','mauriliocruz@gmal.com','00000000000','Pinheirinhho'),
+       ('Maurilio Cruz','2003/01/13','41 983785590','mauriliocruz@gmal.com','00000000000','Pinheirinhho'),
        ('Alice Harumi','2014/12/14','41 999999999', 'aliceharumi@gmail.com','00000000000','Pinheirinho'),
        ('Sara Alves','2011/04/16','41 988888888', 'saraalves@gmal.com','00000000000','Pinheirinho'),
        ('Laura Gritten','2006/01/04','41 977777777','lauragritten@gmail.com','00000000000','Pinheirinho'),
@@ -47,7 +47,7 @@ VALUES ('Arthur De Souza Alves','41 988337710'),
 
 INSERT INTO VENDA (data_de_venda,quantidade,valor_total,ID_cliente,ID_vendedor)
 VALUES ('2024/03/10','3',118.52,1,2),
-	   ('2024/03/11','1',20.00,4,2),
+       ('2024/03/11','1',20.00,4,2),
        ('2024/03/11','2',68.12,1,2),
        ('2024/03/25','2',45.57,1,2),
        ('2024/03/25','1',30.90,1,2),
@@ -57,8 +57,8 @@ VALUES ('2024/03/10','3',118.52,1,2),
        ('2024/04/05','3',93.69,3,2);
 INSERT INTO MAIS_VENDIDO (nome,ID_LIVRO)
 VALUES ('Harry Potter e a Pedra Filosofal',1),
-	   ('Harry Potter e a Camara Secreta',2),
+       ('Harry Potter e a Camara Secreta',2),
        ('Percy Jackson O Ladrao de Raios',3),
-	   ('O Hobbit',4),
+       ('O Hobbit',4),
        (' O Pequeno Principe',5),
        ('O Senhor dos Anéis- A Sociedade do Anél',6);
