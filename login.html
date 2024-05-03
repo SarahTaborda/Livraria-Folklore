@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Livraria Folklore - Login</title>
+        <link rel="stylesheet" href="C:\Livraria\CSS\style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <h1>Conecte-se</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nome de usuário" id="username">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" id="senha">
+                <i class='bx bx-low-vision' id="btn-senha" onclick="mostrarSenha()"></i>
+            </div>
+            <div class="lembrar-esqueceu">
+                <label><input type="checkbox"> Lembre-me</label>
+                <a href="#">Esqueceu a senha ?</a>
+            </div>
+
+            <button type="button" class="btn" onclick="logar()">Conecte-se</button> 
+
+            <div class="Cadastrar-link">
+                <p>Você não possui conta ?<a href="#">Cadastrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function logar() {
+            var username = document.getElementById('username').value;
+            var senha = document.getElementById('senha').value;
+
+            if (username === "admin" && senha === "admin") {
+               
+                location.href = "C:/Livraria/HTML/index.html"
+            } else {
+                alert('Nome de usuário ou senha incorretos');
+            }
+        }
+
+        function mostrarSenha() {
+            var senhaInput = document.getElementById('senha');
+            var btnSenha = document.getElementById('btn-senha');
+            
+            if (senhaInput.type === "password") {
+                senhaInput.type = "text";
+                btnSenha.classList.remove('bx-low-vision');
+                btnSenha.classList.add('bx-show');
+            } else {
+                senhaInput.type = "password";
+                btnSenha.classList.remove('bx-show');
+                btnSenha.classList.add('bx-low-vision');
+            }
+        }
+    </script>
+</body>
+</html>

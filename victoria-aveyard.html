@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Livraria Folklore</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	</head>
+
+	<body>
+		
+		<header class="cabeçalho">
+						<!--LOGO-->
+			<div class="container">
+				<a href="index.html"><img class="book" src="book.svg" alt="Livro" height="40" width="40"></a>
+				<a href="index.html"><h1 class="titulo">FOLKLORE</h1></a>
+			</div>
+						<!--CAIXA DE PESQUISA-->
+			<div class="search-box">
+				<div class="row">
+					<input type="text" id="input-box" placeholder="Pesquisar" autocomplete="off">
+					<button class="btn-pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="result-box">
+				</div>
+			</div>
+						<!--CATEGORIAS-->
+			<div class="menu-categorias">
+				<ul>
+					<li class="active">
+						<a href="#"><h2>Categorias</h2></a>
+						<div class="sub-menu">
+							<ul>
+								<li><a href="menor-preco.html">Menor Preço</a></li>
+								<li><a href="maior-preco.html">Maior Preço</a></li>
+								<li><a href="mais-vendidos.html">Mais Vendidos</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+						<!--PERFIL-->
+			<div class="perfil">
+				<a href="#">
+					<img src="perfil.svg" alt="Perfil" height="38" width="38">
+				</a>
+					<a href="#">
+						<h2 class="perfil-txt">Perfil</h>
+					</a>
+			</div>
+						<!--CARRINHO-->
+			<div class="carrinho">
+				<a href="cart.html">
+					<i class="fa-solid fa-cart-shopping" id="icon-cart"></i><span id="span-cart">0</span>
+				</a>
+			</div>
+		</header>
+
+		<section class="conteudo">
+						<!--AUTORES FOMOSOS-->
+			<div id="autores-famosos">
+				<div class="tab-buttons">
+					<a href="index.html" class="tab-btn"><i class="fa-solid fa-house" style="color: #fff;"></i></a>
+					<a href="tolkien.html" class="tab-btn">J.R.R Tolkien</a>
+					<a href="jk-rowling.html" class="tab-btn">J.K Rowling</a>
+					<a href="victoria-aveyard.html" class="tab-btn">Victoria Aveyard</a>
+					<a href="sarah-j.html" class="tab-btn">Sarah J. Maas</a>
+					<a href="taereh-mafi.html" class="tab-btn">Taereh Mafi</a>
+					<a href="sthephanie-garber.html" class="tab-btn">Stephanie Garber</a>
+				</div>
+			</div>
+					<!--VICTORIA AVEYARD-->
+			<div class="listProduct">
+				<h1 class="titulo-autores">Victoria Aveyard</h1>
+				<div class="shop-contant">
+					<div class="product-box">
+						<div class="livro"><img src="Livros/A Rainha Vermelha.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">A Rainha Vermelha</p></div>
+						<p class="price">R$ 31,90</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/espada-de-vidro.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Espada de vidro</p></div>
+						<p class="price">R$ 45,04</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/a-prisao-do-rei.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">A prisão do rei</p></div>
+						<p class="price">R$ 44,92</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/tempestade-de-guerra.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Tempestade de Guerra</p></div>
+						<p class="price">R$ 39,99</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/coroa-cruel.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Coroa Cruel</p></div>
+						<p class="price">R$ 24,90</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/fate-breaker.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Fate Breaker</p></div>
+						<p class="price">R$ 93,09</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/cancao-da-rainha.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Canção da Rainha</p></div>
+						<p class="price">R$ 3,90</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/destruidor-de-espadas.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Destruidor de espadas</p></div>
+						<p class="price">R$ 57,38</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/cicatrizes-de-aco.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Cicatrizes de Aço</p></div>
+						<p class="price">R$ 3,90</p>
+					</div>
+					<div class="product-box">
+						<div class="livro"><img src="Livros/destruidor-de-mundos.jpg"></div>
+						<div class="nome-livro"><p class="titulo-livro">Destruidor de mundos</p></div>
+						<p class="price">R$ 26,90</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+					<!--RODAPÉ-->
+		<footer class="rodape">
+			<p class="rodape-icons">
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-linkedin"></i></p>
+			<p class="rodape-txt">© 2024 Livraria Folklore</p>
+		</footer>
+
+		<script src="autocomplete.js"></script>
+		<script src="cart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Livraria Folklore - Mais Vendidos</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	</head>
+
+	<body>
+		
+		<header class="cabeçalho">
+					<!--LOGO-->
+			<div class="container">
+				<a href="index.html"><img class="book" src="book.svg" alt="Livro" height="40" width="40"></a>
+				<a href="index.html"><h1 class="titulo">FOLKLORE</h1></a>
+			</div>
+					<!--CAIXA DE PESQUISA-->
+			<div class="search-box">
+				<div class="row">
+					<input type="text" id="input-box" placeholder="Pesquisar" autocomplete="off">
+					<button class="btn-pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="result-box">
+				</div>
+			</div>
+					<!--CATEGORIAS-->
+			<div class="menu-categorias">
+				<ul>
+					<li class="active">
+						<a href="#"><h2>Categorias</h2>
+						</a>
+						<div class="sub-menu">
+							<ul>
+								<li><a href="menor-preco.html">Menor Preço</a></li>
+								<li><a href="maior-preco.html">Maior Preço</a></li>
+								<li><a href="mais-vendidos.html">Mais Vendidos</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+					<!--PERFIL-->
+			<div class="perfil">
+				<a href="#">
+					<img src="perfil.svg" alt="Perfil" height="38" width="38">
+				</a>
+					<a href="#">
+						<h2 class="perfil-txt">Perfil</h>
+					</a>
+			</div>
+					<!--CARRINHO-->
+			<div class="carrinho">
+				<a href="cart.html">
+					<i class="fa-solid fa-cart-shopping" id="icon-cart"></i><span id="span-cart">0</span>
+				</a>
+			</div>
+		</header>
+
+		<section class="conteudo">
+						<!--AUTORES FAMOSOS-->
+			<div id="autores-famosos">
+				<div class="tab-buttons">
+					<a href="index.html" class="tab-btn"><i class="fa-solid fa-house" style="color: #fff;"></i></a>
+					<a href="tolkien.html" class="tab-btn">J.R.R Tolkien</a>
+					<a href="jk-rowling.html" class="tab-btn">J.K Rowling</a>
+					<a href="victoria-aveyard.html" class="tab-btn">Victoria Aveyard</a>
+					<a href="sarah-j.html" class="tab-btn">Sarah J. Maas</a>
+					<a href="taereh-mafi.html" class="tab-btn">Taereh Mafi</a>
+					<a href="sthephanie-garber.html" class="tab-btn">Stephanie Garber</a>
+				</div>
+			</div>
+						<!--LIVROS MAIS VENDIDOS-->
+					<div class="listProduct">
+						<h1 class="titulo-autores">MAIS VENDIDOS</h1>
+						<div class="shop-contant">
+							<div class="product-box">
+								<div class="livro"><img src="Livros/Harry Potter e a Pedra Filosofal.jpg"></div>
+								<p class="titulo-livro">Harry Potter e a Pedra Filosofal</p>
+								<p class="preço-livro">R$ 48,12</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/HP_camara_secreta.jpg"></div>
+								<p class="titulo-livro">Harry Potter e a Câmara Secreta</p>
+								<p class="preço-livro">R$ 50,40</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/HP_prisioneiro_de_azkaban.jpg"></div>
+								<p class="titulo-livro">Harry Potter e o Prisioneiro de Askaban</p>
+								<div class="preço"><p class="preço-livro">R$ 54,23</p></div>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/HP_calice_de_fogo.jpg"></div>
+								<p class="titulo-livro">Harry Potter e o Cálice de Fogo</p>
+								<p class="preço-livro">R$ 74,93</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/Pearcy Jackson - O Ladrão de Raios.jpg"></div>
+								<p class="titulo-livro">Pearcy Jackson: O Ladrão de Raios</p>
+								<p class="preço-livro">R$ 20,00</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/O_silmarillion.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Silmarillion</p></div>
+								<p class="preço-livro">R$ 48,58</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/O_hobbit.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Hobbit</p></div>
+								<p class="preço-livro">R$ 53,80</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/As_cronicas_de_gl.jpg"></div>
+								<p class="titulo-livro">A Guerra dos Tronos: As Crônicas de Gelo e Fogo</p>
+								<p class="preço-livro">R$ 67.62</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/O Senhor dos Anéis - A Sociedade do Anél.jpg"></div>
+								<p class="titulo-livro">O Senhor dos Anéis- A Sociedade do Anél</p>
+								<p class="preço-livro">R$ 30,90</p>
+							</div>
+							<div class="product-box">
+								<div class="livro"><img src="Livros/pequeno-principe.jpg"></div>
+								<div class="nome-livro"><p class="titulo-livro">O Pequeno Príncipe</p></div>
+								<p class="preço-livro">R$ 14,67</p>
+							</div>
+						</div>
+					</div>
+		</section>
+
+		<footer class="rodape">
+			<p class="rodape-icons">
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-linkedin"></i></p>
+			<p class="rodape-txt">© 2024 Livraria Folklore</p>
+		</footer>
+		
+		<script src="autocomplete.js"></script>
+		<script src="cart.js"></script>
+	</body>
+</html>
